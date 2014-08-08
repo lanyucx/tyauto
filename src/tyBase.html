@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>鞍山添赢汽车配件制造有限公司</title>
+    <meta charset="utf-8"/>
+    <meta name="Keywords" content="鞍山添赢汽车配件制造有限公司"/>
+    <meta name="Description" content="鞍山添赢汽车配件制造有限公司"/>
+    <script src="{{STATIC_URL}}js/jquery-2.0.3.min.js"></script>
+    <script src="{{STATIC_URL}}js/fei.js"></script>
+    <link rel="stylesheet" href="{{STATIC_URL}}css/ty.css"/>
+    {% block js %}{% endblock %}
+    {% block css %}{% endblock %}
+  </head>
+  <body>
+    <header style="background-image:url({{MEDIA_URL}}image/ty/1px.png);">
+      <div id="menu" style="background-image:url({{MEDIA_URL}}image/ty/1px.png);">
+        <div id="name">鞍山添赢汽车配件制造有限公司</div>
+        <nav>
+          <ul>
+            <li><a href="/tyIndex/">网站首页</a></li>
+            <li><a href="/tyPro/">挂车系列</a></li>            
+            <li><a href="/tyPro/">生产设备</a></li>
+            <li><a href="/tyQua1/">资质荣誉</a></li>
+            <li><a href="/tyVi/">视频</a></li>
+            <li><a href="/tyNews1/">新闻中心</a></li>
+            <li><a href="/tyRec1/">人才招聘</a></li>
+            <li><a href="/tyUs/">联系我们</a></li>           
+          </ul>
+        </nav>
+      </div>
+    </header>
+    {% block huan %}{% endblock %}
+    <section>
+      {% block content %}{% endblock %}
+      <div id="clear"></div>
+    </section>
+
+    <script>
+      $(function(){
+        var w=$(window).width();
+        var s=w/1366;
+        $('#menu').css('width',w);
+        $('#foot').css('width',w);
+        $('nav').css('margin-left',20*s);
+        $('nav').css('font-size',16*s);
+        $('#name').css('margin-left',50*s);
+        $('#name').css('font-size',22*s);
+        $('span').css('font-size',16*s);
+        $('#span1').css('margin-left',5*s);
+        $('#span2').css('margin-left',60*s);           
+        $('ul').css('width',730*s); 
+        $('ul li').css('margin-left',30*s);
+      })         
+    </script>
+
+    <footer>
+      <div id="foot"> 
+        <span id="span1">Copyright © 2014-2015&nbsp;鞍山添赢汽车配件制造有限公司</span>
+        <span id="span2">辽ICP备10204930号-6</span>
+      </div>
+    </footer>
+
+  </body>
+</html>
+

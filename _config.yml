@@ -1,0 +1,4 @@
+highlighter: pygments
+github: git@github.com:lanyucx/tyauto.git
+source: src
+destination: dist
