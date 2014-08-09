@@ -1,0 +1,15 @@
+{% extends "tyBase.html" %}
+
+{% block content %}
+   <div class="qua_a">
+     <div style="background-image:url({{MEDIA_URL}}image/ty/1px.jpg);">
+       <a href="/tyQua1/">公司资质</a>
+     </div>
+     <div style="background-image:url({{MEDIA_URL}}image/ty/1px.jpg);">
+       <a href="/tyQua2/">公司荣誉</a>
+     </div>
+   </div>
+   <div class="qua_b">
+     {% block qua %}{% endblock %}
+   </div>
+{% endblock %}
