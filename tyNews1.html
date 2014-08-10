@@ -1,6 +1,7 @@
-{% extends "tyNewsBase.html" %}
-{% block news %}
-   <div class="title" style="background-image:url({{MEDIA_URL}}image/ty/1px.jpg);">公司新闻</div>
+---
+layout: tyNewsBase
+---
+   <div class="title" style="background-image:url(/images/ty/1px.jpg);">公司新闻</div>
    <div>
      <a href="/tyNewsA/">青岛重工推出欧力克四系液压缸举升系统</a>
    </div>
@@ -25,4 +26,3 @@
    <div>
      <a href="/tyNews1/">公司新闻</a>
    </div>
-{% endblock %}

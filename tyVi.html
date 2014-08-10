@@ -1,9 +1,9 @@
-{% extends "tyBase.html" %}
-
-{% block content %}
+---
+layout: base
+---
    <video id="viA" controls="controls" autoplay="autoplay">
-     <source src="{{MEDIA_URL}}video/ty.webm" type="video/webm" />
-     <source src="{{MEDIA_URL}}video/ty.mp4" type="video/mp4" />
+     <source src="/video/ty.webm" type="video/webm" />
+     <source src="/video/ty.mp4" type="video/mp4" />
      您的浏览器不支持 video 标签,请用火狐,谷歌,360等浏览器。   
    </video>
 
@@ -17,5 +17,3 @@
        $('section').css('height',($(window).height()-119));
      })
    </script>
-
-{% endblock %}
